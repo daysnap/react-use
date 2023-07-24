@@ -1,0 +1,42 @@
+{
+  "name": "@daysnap/react-use",
+  "version": "0.0.1",
+  "description": "react use hooks",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./*": "./*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daysnap/react-use.git"
+  },
+  "keywords": [
+    "daysnap",
+    "react",
+    "react use",
+    "hooks"
+  ],
+  "files": [
+    "lib",
+    "es"
+  ],
+  "author": "woshiajuana <979703986@qq.com>",
+  "sideEffects": false,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daysnap/react-use/issues"
+  },
+  "homepage": "https://github.com/daysnap/react-use#readme",
+  "devDependencies": {
+    "plop": "^3.1.2"
+  }
+}
