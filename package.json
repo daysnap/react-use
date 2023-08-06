@@ -13,6 +13,12 @@
     "./*": "./*"
   },
   "scripts": {
+    "gen": "plop --plopfile ./scripts/gen.js --force",
+    "del": "plop --plopfile ./scripts/del.js --force",
+    "entry": "plop --plopfile ./scripts/entry.js --force",
+    "clean:es": "rimraf ./es",
+    "clean:lib": "rimraf ./lib",
+    "clean": "npm run clean:es && npm run clean:lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,6 +43,7 @@
   },
   "homepage": "https://github.com/daysnap/react-use#readme",
   "devDependencies": {
-    "plop": "^3.1.2"
+    "plop": "^3.1.2",
+    "rimraf": "^5.0.1"
   }
 }
